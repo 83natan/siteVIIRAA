@@ -22,7 +22,7 @@
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"></button>
     <nav class="nav" id="nav-principal" aria-label="Menu principal">
-      <a href="#sobre">O evento</a><a href="#programacao">Programação</a><a href="#inscricao">Inscrição</a><a href="#submissao">Trabalhos</a><a href="#organizacao">Organização</a><a href="#sao-luis">São Luís</a>
+      <a href="#sobre">O evento</a><a href="#datas-importantes">Datas</a><a href="#programacao-raa">Programação</a><a href="#inscricao">Inscrição</a><a href="#submissao">Trabalhos</a><a href="#organizacao">Organização</a><a href="#sao-luis">São Luís</a><a href="#roteiro-title">Roteiro</a>
       <!-- TROQUE o #inscricao pelo link real de inscrição quando estiver disponível. -->
       <a class="button button-small button-primary" href="#inscricao">Inscreva-se <span aria-hidden="true">↗</span></a>
     </nav>
@@ -42,7 +42,7 @@
         <span><b class="meta-icon">⌖</b> UFMA · São Luís, MA <small>Universidade Federal do Maranhão</small></span>
         <span><b class="meta-icon">◉</b> Coordenação <small>Profa. Dra. Ana C. Alcântara</small></span>
       </div>
-      <div class="hero-actions"><a class="button button-accent" href="#programacao">Explorar programação <span aria-hidden="true">↓</span></a><a class="button button-glass" href="#sobre">Conheça o evento</a></div>
+      <div class="hero-actions"><a class="button button-accent" href="#programacao-raa">Explorar programação <span aria-hidden="true">↓</span></a><a class="button button-glass" href="#sobre">Conheça o evento</a></div>
       
     </div>
     <div class="hero-index" aria-hidden="true"><span>VII</span><i></i><span>RAA</span></div>
@@ -54,12 +54,15 @@
       <div class="about-copy"><p class="eyebrow">Sobre o encontro</p><h2>Ciência das argilas para compreender materiais <em>e criar possibilidades.</em></h2>
         <p>A VII Reunião de Argilas Aplicadas (VII RAA) reunirá pesquisadores, docentes, estudantes e profissionais interessados na ciência, caracterização, modificação e aplicação de argilas e materiais correlatos.</p>
         <p>Realizado na Universidade Federal do Maranhão (UFMA), em São Luís, o congresso será um espaço de intercâmbio científico, apresentação de resultados e aproximação entre pesquisa acadêmica, inovação tecnológica e desafios socioambientais. A edição de 2027 é coordenada pela Profa. Dra. Ana C. Alcântara.</p>
+        
         <a class="text-link" href="#conexoes">Descubra oportunidades de colaboração <span>→</span></a>
       </div>
-      <div class="about-visual"><img src="images/argilas-materiais.png" alt="Ilustração abstrata de camadas minerais e materiais" loading="lazy"><div class="image-caption"><span class="caption-mark">✳</span><span><strong>Materiais. Ideias. Impacto.</strong><small>Ciência em diálogo com a sociedade.</small></span></div></div>
+      <div class="about-visual">
+        <img class="about-logo-banner" src="images/logo.png" alt="Logotipo oficial da VII Reunião de Argilas Aplicadas — São Luís, Maranhão, Brasil" loading="lazy">
+        <img src="images/argilas-materiais.png" alt="Ilustração abstrata de camadas minerais e materiais" loading="lazy"><div class="image-caption"><span class="caption-mark">✳</span><span><strong>Materiais. Ideias. Impacto.</strong><small>Ciência em diálogo com a sociedade.</small></span></div></div>
     </div>
   </section>
-
+f
   <section class="numbers-band" aria-label="Temas do evento">
     <div class="container numbers-grid">
       <div><span class="number-symbol">01</span><strong>Materiais</strong><small>Estrutura, propriedades e aplicações</small></div>
@@ -69,96 +72,233 @@
     </div>
   </section>
 
+
+  <!-- DATAS IMPORTANTES: altere os marcos e as datas diretamente neste bloco. -->
+  <section class="section important-dates" id="datas-importantes">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Planeje sua participação</p>
+        <h2>Datas <em>importantes.</em></h2>
+        <p class="heading-description">Acompanhe os principais marcos da VII RAA e organize sua participação no encontro.</p>
+      </div>
+      <div class="dates-timeline">
+        <article class="date-milestone">
+          <span class="date-point" aria-hidden="true"></span>
+          <p class="date-label">Inscrições</p>
+          <h3>Abertura das inscrições</h3>
+          <p class="date-value">05 de Novembro de 2026</p>
+        </article>
+        <article class="date-milestone">
+          <span class="date-point" aria-hidden="true"></span>
+          <p class="date-label">Trabalhos científicos</p>
+          <h3>Prazo para submissão de resumos</h3>
+          <p class="date-value">Consulte a seção Submissão</p>
+        </article>
+        <article class="date-milestone">
+          <span class="date-point" aria-hidden="true"></span>
+          <p class="date-label">Resultados</p>
+          <h3>Divulgação dos trabalhos aceitos</h3>
+          <p class="date-value">A definir</p>
+        </article>
+        <article class="date-milestone date-milestone-featured">
+          <span class="date-point" aria-hidden="true"></span>
+          <p class="date-label">24–26 de maio de 2027</p>
+          <h3>VII Reunião de Argilas Aplicadas</h3>
+          <p class="date-value">Universidade Federal do Maranhão · São Luís</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAÇÃO DO EVENTO: tabela com filtros por dia, categoria e busca. -->
+  <section class="section event-schedule" id="programacao-raa" aria-labelledby="raa-schedule-title">
+    <div class="container">
+      <div class="section-heading heading-row">
+        <div><p class="eyebrow">VII Reunião de Argilas Aplicadas</p><h2 id="raa-schedule-title">Programação <em>do evento.</em></h2></div>
+        <p class="heading-description">24 a 26 de maio de 2027 · Universidade Federal do Maranhão, São Luís — MA.</p>
+      </div>
+      <div class="raa-filtros">
+        <select id="raa-dia" aria-label="Filtrar por dia">
+          <option value="">Todos os dias</option>
+          <option value="2027-05-24">24 de maio — segunda-feira</option>
+          <option value="2027-05-25">25 de maio — terça-feira</option>
+          <option value="2027-05-26">26 de maio — quarta-feira</option>
+        </select>
+        <select id="raa-tipo" aria-label="Filtrar por tipo">
+          <option value="">Todas as atividades</option>
+          <option value="Palestra">Palestras</option>
+          <option value="Minicurso">Minicursos</option>
+          <option value="Oficina">Oficinas</option>
+          <option value="Sessão científica">Sessões científicas</option>
+          <option value="Intervalo">Intervalos e refeições</option>
+          <option value="Institucional">Atividades institucionais</option>
+        </select>
+        <input id="raa-busca" type="search" placeholder="Buscar atividade ou palestrante..." aria-label="Buscar atividade ou palestrante">
+      </div>
+      <p id="raa-contagem" aria-live="polite"></p>
+      <div class="raa-tabela-container">
+        <table class="raa-tabela">
+          <thead><tr><th>Data</th><th>Horário</th><th>Atividade</th><th>Categoria</th><th>Palestrante / responsável</th></tr></thead>
+          <tbody id="raa-corpo"></tbody>
+        </table>
+      </div>
+      <p class="raa-nota">As atividades que ocorrem simultaneamente são paralelas. Os horários e títulos seguem o documento de programação fornecido.</p>
+    </div>
+  </section>
+
   <!-- PROGRAMAÇÃO: edite os cards abaixo; os filtros funcionam pelo atributo data-category. -->
   <section class="section programme" id="programacao">
     <div class="container">
-      <div class="section-heading heading-row"><div><p class="eyebrow">Programa científico</p><h2>Ideias que merecem <em>estar na agenda.</em></h2></div><p class="heading-description">Três dias dedicados à troca de conhecimento sobre argilas, minerais, materiais funcionais, caracterização, aplicações tecnológicas e sustentabilidade.</p></div>
+      <div class="section-heading heading-row"><div><p class="eyebrow">Formação e atualização científica</p><h2>Minicursos e Palestras <em>da VII RAA.</em></h2></div><p class="heading-description">Três dias dedicados à troca de conhecimento sobre argilas, minerais, materiais funcionais, caracterização, aplicações tecnológicas e sustentabilidade.</p></div>
+
+      <div class="programme-days" role="group" aria-label="Selecionar dia da programação">
+        <button class="programme-day is-active" type="button" data-day-filter="24/05/2027" aria-pressed="true">
+          <strong>Dia 1</strong><span>24 de maio</span>
+        </button>
+        <button class="programme-day" type="button" data-day-filter="25/05/2027" aria-pressed="false">
+          <strong>Dia 2</strong><span>25 de maio</span>
+        </button>
+        <button class="programme-day" type="button" data-day-filter="26/05/2027" aria-pressed="false">
+          <strong>Dia 3</strong><span>26 de maio</span>
+        </button>
+      </div>
+      <p class="programme-day-note" id="programme-day-note" aria-live="polite">Atividades de 24 de maio.</p>
+
       <div class="filters" role="group" aria-label="Filtrar atividades">
         <button class="filter is-active" data-filter="all" aria-pressed="true">Todas</button><button class="filter" data-filter="palestra" aria-pressed="false">Palestras</button><button class="filter" data-filter="minicurso" aria-pressed="false">Minicursos</button>
       </div>
 
       <div class="activity-grid" id="activity-grid">
 
-        <article class="activity-card" data-category="palestra" data-date="24/05/2027" data-time="09:00">
-        <img src="images/atividade-palestra.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-blue">Palestra</span><span>24/05/2027 · 09:00</span></div>
-        <h3>Sessão de abertura e conferência inaugural</h3><p></p>
-        <div class="activity-footer"><span>Dra. Ana C. Alcântara - UFMA</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="palestra" data-date="24/05/2027" data-time="10:50">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 1</span><span>24/05/2027 · 10:50</span></div>
+            <h3>Argilominerais aplicados em saúde e remediação ambiental</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Maria Gardênnia da Fonseca</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-        <article class="activity-card" data-category="palestra" data-date="24/05/2027" data-time="09:00">
-        <img src="images/atividade-palestra.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-blue">Palestra</span><span>24/05/2027 · 09:00</span></div>
-        <h3>Aplicações De Filtros A Base De Argilas Naturais Com Blends De Fibras Naturais Em Sistemas De Potabilização De Água</h3><p></p>
-        <div class="activity-footer"><span>Dr. Harvey Alexander Villa Velez - UFMA</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00; continuação às 16:20">
+          <img src="images/atividade-minicurso.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-green">Minicurso 1</span><span>24/05/2027 · 14:00 · continuação às 16:20</span></div>
+            <h3>Argilominerais: estrutura, identificação, ocorrências e aplicações</h3>
+            <p>Continuação às 16:20, após o intervalo.</p>
+            <div class="activity-footer"><span>Rômulo Simões Angélica</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-        <article class="activity-card" data-category="palestra" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-blue">Palestra</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Materiais Derivados De Argilominerais Aplicados A Processos De Adsorção E Catálise</h3><p></p>
-        <div class="activity-footer"><span>Sibele Berenice Castella Pergher - UFRN</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00; continuação às 16:20">
+          <img src="images/atividade-minicurso.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-green">Minicurso 2</span><span>24/05/2027 · 14:00 · continuação às 16:20</span></div>
+            <h3>RMN no estado sólido para caracterização de materiais</h3>
+            <p>Continuação às 16:20, após o intervalo.</p>
+            <div class="activity-footer"><span>Lucas Urbano José</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-<!--MINICURSOS-->
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 1</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Desafios Na Gestão De Grupos De Pesquisa No Século 21: Uma Abordagem Prática</h3><p>Área: Gestão/Empreendorismo Acadêmico</p>
-        <div class="activity-footer"><span>Hernane Silva Barud - UNIARA</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00; continuação às 16:20">
+          <img src="images/atividade-minicurso.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-green">Minicurso 3</span><span>24/05/2027 · 14:00 · continuação às 16:20</span></div>
+            <h3>Aplicação da DFT em simulações de materiais lamelares</h3>
+            <p>Continuação às 16:20, após o intervalo.</p>
+            <div class="activity-footer"><span>Alexandre Amaral Leitão</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 2</span><span>24/05/2027 · 14:00</span></div>
-        <h3>O Mineral Clinocloro Como Uma Nanocavidade Natural Para Confinamento De Água: Uma Abordagem Multitécnica </h3><p>Área: Geologia / Tecnicas De Caracterização</p>
-        <div class="activity-footer"><span>Raphaela De Oliveira - CNPEM</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="palestra" data-date="25/05/2027" data-time="08:30">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 2</span><span>25/05/2027 · 08:30</span></div>
+            <h3>Da argila ao algoritmo: como a Inteligência Artificial está reinventando a ciência dos materiais</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Tiago Gomes dos Santos</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 3</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Hidroxidos Duplos Lamelares Do Tipo Shigaita: De Monometálicos Aos De Alta Entropía</h3><p>Área: Materiais Lamelares </p>
-        <div class="activity-footer"><span>Fernando Wypych - UFPR</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="palestra" data-date="25/05/2027" data-time="10:10">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 3</span><span>25/05/2027 · 09:10</span></div>
+            <h3>Desenvolvimento de biomateriais que integram hidróxidos lamelares híbridos e polímeros orgânicos</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Vera Regina Leopoldo Constantino</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 4</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Aplicación De Hidroxidos Dobles Laminares A Procesos De Remediación Ambiental Y Producción De Energías Limpias</h3><p>Área: Fotocatálise / Energia </p>
-        <div class="activity-footer"><span>Maria De Los Angeles Mantilla Ramirez - IPN México</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
-        
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 5</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Argilominerais: Estruturas, Identificação, Ocorrencias E Aplicações</h3><p> </p>
-        <div class="activity-footer"><span>Romulo Simões Angelica - UFPA</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
-        
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 6</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Rmn No Estado Sólido Para Caracterização De Materiais</h3><p>Área: Geologia / Tecnicas De Caracterização </p>
-        <div class="activity-footer"><span>Lucas Urbano José - USP</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
-        
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 7</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Aplicação Da Dft Em Simulações De Materiais Lamelares</h3><p>Área: Quântica/Química Teórica </p>
-        <div class="activity-footer"><span>Alexandre Amaral Leitão - IFJF</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
-        
-        <article class="activity-card" data-category="minicurso" data-date="24/05/2027" data-time="14:00">
-        <img src="images/atividade-minicurso.png" alt="" loading="lazy"><div class="activity-body"><div class="activity-meta">
-        <span class="pill pill-green">Minicurso 8</span><span>24/05/2027 · 14:00</span></div>
-        <h3>Empleo De Arcillas En Cosmetica</h3><p></p>
-        <div class="activity-footer"><span>Cesar Antonio Viseras Iborra - Universidade de Granada Espanha</span>
-        <button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>
+        <article class="activity-card" data-category="palestra" data-date="25/05/2027" data-time="11:30">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 4</span><span>25/05/2027 · 10:10</span></div>
+            <h3>Hidróxidos duplos lamelares do tipo hidrotalcita: dos monometálicos aos de alta entropia</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Fernando Wypych</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
+        <article class="activity-card" data-category="palestra" data-date="25/05/2027" data-time="14:00">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 5</span><span>25/05/2027 · 10:50</span></div>
+            <h3>O mineral clinocloro como uma nanocavidade natural para confinamento de água: uma abordagem multitécnica</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Raphaela de Oliveira</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
-<!--        <article class="activity-card" data-category="mesa" data-date="26/05/2027" data-time="14:00"><img src="images/atividade-mesa.png" alt="Imagem ilustrativa de discussão entre pesquisadores" loading="lazy"><div class="activity-body"><div class="activity-meta"><span class="pill pill-orange">Mesa-redonda</span><span>26/05/2027 · 14:00</span></div><h3>Colaborações científicas e perspectivas futuras</h3><p>Encerramento com discussão sobre redes de colaboração, formação de pesquisadores e possibilidades para futuras edições.</p><div class="activity-footer"><span>Debate científico</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div></div></article>-->
+        <article class="activity-card" data-category="palestra" data-date="26/05/2027" data-time="08:30">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 6</span><span>26/05/2027 · 11:30</span></div>
+            <h3>Geologia das argilas e dos minerais industriais no Brasil</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Luís Carlos  Bertolino</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
 
+        <article class="activity-card" data-category="palestra" data-date="26/05/2027" data-time="08:30">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 7</span><span>26/05/2027 · 08:30</span></div>
+            <h3>Materiais derivados de argilominerais aplicados a processos de adsorção e catálise</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Sibele Berenice Castella Pergher</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="palestra" data-date="26/05/2027" data-time="09:10">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 8</span><span>26/05/2027 · 09:10</span></div>
+            <h3>Aplicação de hidróxidos duplos lamelares em processos de remediação ambiental e purificação de águas limpas</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Maria de los Ángeles Mantilla Ramírez</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="palestra" data-date="26/05/2027" data-time="10:10">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 9</span><span>26/05/2027 · 10:10</span></div>
+            <h3>Aplicação de filtros a base de argilas naturais com blends de fibras naturais em sistema de potabilização de água</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Harvey Alexander Villa Velez</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
+
+        <article class="activity-card" data-category="palestra" data-date="26/05/2027" data-time="10:50">
+          <img src="images/atividade-palestra.png" alt="" loading="lazy">
+          <div class="activity-body">
+            <div class="activity-meta"><span class="pill pill-blue">Palestra 10</span><span>26/05/2027 · 10:50</span></div>
+            <h3>Desafios na gestão de grupos de pesquisa no século XXI: uma abordagem prática</h3>
+            <p class="activity-description-empty"></p>
+            <div class="activity-footer"><span>Hernane da Silva Júnior</span><button class="save-activity" type="button" aria-pressed="false">＋ Monte sua agenda</button></div>
+          </div>
+        </article>
       </div>
       <div class="agenda-bar"><div><strong>Monte sua agenda</strong><span id="agenda-status">Selecione uma atividade para ver nome, data e horário nesta agenda.</span></div><button class="button button-outline" id="show-agenda">Ver seleção <span id="agenda-count">0</span></button></div>
 
@@ -174,7 +314,12 @@
         <a class="button button-primary" href="#organizacao">Conversar sobre parceria <span>↗</span></a>
       </div>
     </div>
-    <div class="container partner-strip"><p>INSTITUIÇÕES PARCEIRAS</p><div class="partner-logos"><span>LOGO PARCEIRO</span><span>LOGO PARCEIRO</span><span>LOGO PARCEIRO</span><span>LOGO PARCEIRO</span><span>LOGO PARCEIRO</span></div></div>
+    <div class="container partner-strip"><h1>INSTITUIÇÕES PARCEIRAS</h1><p>Clique nos links e conheça nossos parceriros</p>
+      <div class="partner-logos">
+        <a href="https://www.furlab.com.br/" target="_blank"><img src="images/furlab.png" alt="furlab"></a>
+        <a href="https://www.instagram.com/83.natan/" target="_blank"><img src="images/smartcleam.png" alt="Smart Cleam"></a>
+        <a href="https://www.google.com.br/" target="_blank"><img src="images/furlab.png" alt="Empresa 2"></a>
+        <a href="https://www.google.com.br/" target="_blank"><img src="images/furlab.png" alt="Empresa 2"></a>
   </section>
 
   <!-- SÃO LUÍS: imagens vetoriais de exemplo, substituíveis por fotos locais. -->
@@ -197,6 +342,77 @@
         <div class="carousel-controls"><div class="carousel-dots" role="group" aria-label="Escolher imagem"><button class="carousel-dot is-active" aria-label="Mostrar imagem 1" aria-pressed="true"></button><button class="carousel-dot" aria-label="Mostrar imagem 2" aria-pressed="false"></button><button class="carousel-dot" aria-label="Mostrar imagem 3" aria-pressed="false"></button></div><div><button class="carousel-arrow" id="city-prev" aria-label="Imagem anterior">←</button><button class="carousel-arrow" id="city-next" aria-label="Próxima imagem">→</button></div></div>
       </div>
       <div class="ufma-map-block"><div><p class="eyebrow">Local do evento</p><h3>Universidade Federal do Maranhão</h3><p>Campus São Luís — Bacanga, São Luís, Maranhão.</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Universidade+Federal+do+Maranh%C3%A3o+Campus+Dom+Delgado+S%C3%A3o+Lu%C3%ADs" target="_blank" rel="noopener">Abrir rota no Google Maps ↗</a></div><div class="map-frame"><iframe title="Mapa da Universidade Federal do Maranhão, campus São Luís" src="https://maps.google.com/maps?q=Universidade%20Federal%20do%20Maranh%C3%A3o%20Campus%20Dom%20Delgado%20S%C3%A3o%20Lu%C3%ADs&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div>
+
+      <!-- CARACTERÍSTICAS DA CIDADE: selecione uma localidade para conhecer seus destaques. -->
+      <section class="city-guide" aria-labelledby="city-guide-title">
+        <div class="city-guide-heading">
+          <p class="eyebrow">Conheça o Maranhão</p>
+          <h3 id="city-guide-title">Uma cidade anfitriã. Muitas experiências.</h3>
+          <p>Além do congresso, aproveite para conhecer o patrimônio, as comunidades costeiras e as paisagens que tornam o Maranhão singular.</p>
+        </div>
+        <div class="city-tabs" role="tablist" aria-label="Destinos do Maranhão">
+          <button class="city-tab is-active" id="city-tab-slz" role="tab" aria-selected="true" aria-controls="city-panel-slz" data-city="slz"><strong>São Luís</strong><span>Sede do evento</span></button>
+          <button class="city-tab" id="city-tab-raposa" role="tab" aria-selected="false" aria-controls="city-panel-raposa" data-city="raposa"><strong>Raposa</strong><span>Cerca de 30 km</span></button>
+          <button class="city-tab" id="city-tab-barreirinhas" role="tab" aria-selected="false" aria-controls="city-panel-barreirinhas" data-city="barreirinhas"><strong>Barreirinhas</strong><span>Porta dos Lençóis</span></button>
+          <button class="city-tab" id="city-tab-lencois" role="tab" aria-selected="false" aria-controls="city-panel-lencois" data-city="lencois"><strong>Lençóis Maranhenses</strong><span>Parque Nacional</span></button>
+        </div>
+        <div class="city-panels">
+          <article class="city-panel is-active" id="city-panel-slz" role="tabpanel" aria-labelledby="city-tab-slz" data-city-panel="slz">
+            <div class="">
+            <img src="images/sao-luis.png" alt="" class="city-photo">
+            </div>
+            <div class="city-panel-copy">
+              <p class="eyebrow">Patrimônio e cultura</p><h4>São Luís, a ilha dos azulejos</h4>
+              <p>O Centro Histórico, reconhecido como Patrimônio Mundial pela UNESCO, reúne casarões, fachadas azulejadas, ladeiras e praças que contam séculos de história. A cidade também pulsa no tambor de crioula, no bumba meu boi, nos mercados e na culinária marcada por sabores próprios.</p>
+              <ul><li><strong>Centro Histórico:</strong> caminhe pela Rua Portugal e pela região da Praia Grande.</li><li><strong>Cultura:</strong> conheça os espaços de memória e as manifestações populares.</li><li><strong>Sabores:</strong> experimente pratos como arroz de cuxá e torta de camarão.</li></ul>
+            </div>
+          </article>
+          <article class="city-panel" id="city-panel-raposa" role="tabpanel" aria-labelledby="city-tab-raposa" data-city-panel="raposa" hidden>
+            <div class="">
+            <img src="images/raposa.png" alt="" class="city-photo">
+            </div>
+            <div class="city-panel-copy">
+              <p class="eyebrow">Litoral e artesanato</p><h4>Raposa, renda de bilros e marés</h4>
+              <p>Próxima à capital, Raposa combina paisagens costeiras, comunidades pesqueiras e o trabalho tradicional das rendeiras. É um passeio para conhecer outro ritmo do litoral maranhense e valorizar os saberes transmitidos entre gerações.</p>
+              <ul><li><strong>Renda de bilros:</strong> conheça o artesanato tradicional da região.</li><li><strong>Passeios costeiros:</strong> consulte operadores locais sobre marés e condições do dia.</li><li><strong>Gastronomia:</strong> explore restaurantes de frutos do mar.</li></ul>
+            </div>
+          </article>
+          <article class="city-panel" id="city-panel-barreirinhas" role="tabpanel" aria-labelledby="city-tab-barreirinhas" data-city-panel="barreirinhas" hidden>
+            <div class="">
+            <img src="images/barreirinhas.png" alt="" class="city-photo">
+            </div>
+            <div class="city-panel-copy">
+              <p class="eyebrow">Rios e aventura</p><h4>Barreirinhas, porta de entrada dos Lençóis</h4>
+              <p>Às margens do Rio Preguiças, Barreirinhas é uma das principais bases para visitar o Parque Nacional dos Lençóis Maranhenses. A cidade oferece estrutura de hospedagem, restaurantes e passeios organizados por operadores locais.</p>
+              <ul><li><strong>Rio Preguiças:</strong> passeios de barco podem incluir comunidades e paisagens de manguezal.</li><li><strong>Lagoas:</strong> os roteiros dependem da estação, do clima e das condições de acesso.</li><li><strong>Planejamento:</strong> reserve transporte e passeios com antecedência.</li></ul>
+            </div>
+          </article>
+          <article class="city-panel" id="city-panel-lencois" role="tabpanel" aria-labelledby="city-tab-lencois" data-city-panel="lencois" hidden>
+            <div class="">
+            <img src="images/lenc.png" alt="" class="city-photo">
+            </div>
+            <div class="city-panel-copy">
+              <p class="eyebrow">Paisagem natural</p><h4>Lençóis Maranhenses, dunas e lagoas</h4>
+              <p>O Parque Nacional dos Lençóis Maranhenses reúne extensos campos de dunas e lagoas sazonais de águas claras. A paisagem muda ao longo do ano; por isso, a experiência depende do período da visita e das condições locais.</p>
+              <ul><li><strong>Lagoas:</strong> consulte guias sobre os circuitos disponíveis na época da viagem.</li><li><strong>Conservação:</strong> siga as orientações dos condutores e as regras do parque.</li><li><strong>Conforto:</strong> leve proteção solar, água e calçados adequados.</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="city-guide-note">Distâncias, tempos de deslocamento, passeios e condições de visita podem variar. Confirme os detalhes com operadores e órgãos locais antes de viajar.</div>
+      </section>
+
+      <!-- ROTEIRO SUGERIDO: quatro dias para estender a visita após o congresso. -->
+      <section class="four-day-route" aria-labelledby="route-title">
+        <div class="route-heading"><p class="eyebrow">Estenda sua viagem</p><h3 id="roteiro-title">Roteiro sugerido de 4 dias</h3><p>Uma ideia de roteiro para conhecer diferentes paisagens do Maranhão depois do evento.</p></div>
+        <div class="route-days">
+          <article class="route-day"><span class="route-day-number">01</span><h4>São Luís</h4><p>Centro Histórico, Mercado das Tulhas, casarões azulejados e pôr do sol na orla.</p></article>
+          <article class="route-day"><span class="route-day-number">02</span><h4>Raposa</h4><p>Artesanato de renda de bilros, litoral e gastronomia regional, conforme a disponibilidade dos passeios.</p></article>
+          <article class="route-day"><span class="route-day-number">03</span><h4>Barreirinhas</h4><p>Deslocamento para a região dos Lençóis e passeio organizado pelo Rio Preguiças.</p></article>
+          <article class="route-day"><span class="route-day-number">04</span><h4>Lençóis Maranhenses</h4><p>Visita guiada a circuitos de dunas e lagoas, conforme as condições sazonais e a logística local.</p></article>
+        </div>
+        <p class="route-footnote">Este roteiro é apenas uma sugestão. Os deslocamentos entre São Luís e Barreirinhas levam várias horas; avalie pernoites, orçamento e condições de transporte antes de reservar.</p>
+      </section>
+
     </div>
   </section>
 
@@ -207,12 +423,15 @@
       <div class="price-grid">
         <article class="price-card"><span class="price-category">Técnico</span><strong class="price-value">R$ 30,00</strong><span class="price-note">Técnicos e alunos do ensino médio</span></article>
         
-        <article class="price-card"><span class="price-category">Graduação</span><strong class="price-value">R$ 60,00</strong><span class="price-note">Estudantes de graduação</span></article>
-        <article class="price-card"><span class="price-category">Pós-graduação</span><strong class="price-value">R$ 110,00</strong><span class="price-note">Mestrado e doutorado</span></article>
-        <article class="price-card"><span class="price-category">Professor de Ensino Básico</span><strong class="price-value">R$ 130,00</strong><span class="price-note">Professores do ensino fundamental e médio</span></article>
-        <article class="price-card"><span class="price-category">Professor</span><strong class="price-value">R$ 160,00</strong><span class="price-note">Docentes e professores</span></article>
+        <article class="price-card"><span class="price-category">Graduação</span><strong class="price-value">R$ 50,00</strong><span class="price-note">Estudantes de graduação</span></article>
+        <article class="price-card"><span class="price-category">Pós-graduação</span><strong class="price-value">R$ 100,00</strong><span class="price-note">Mestrado e doutorado</span></article>
+        <article class="price-card"><span class="price-category">Professor de Ensino Básico</span><strong class="price-value">R$ 50,00</strong><span class="price-note">Professores do ensino fundamental e médio</span></article>
+        <article class="price-card"><span class="price-category">Professor</span><strong class="price-value">R$ 150,00</strong><span class="price-note">Docentes e professores</span></article>
       </div>
-      <div class="registration-dates"><span class="date-mark">!</span><p><strong>Datas de inscrição</strong><br>O período de inscrição e as formas de pagamento devem ser consultados nos canais oficiais do evento.</p></div>
+      <div class="registration-action">
+        <!-- Substitua o endereço abaixo pelo link oficial do formulário Google Forms. -->
+        <a class="button button-accent registration-button" href="https://forms.gle/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">Inscreva-se <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </section>
 
@@ -232,7 +451,7 @@
   <!-- ORGANIZAÇÃO DO EVENTO -->
   <section class="section organization" id="organizacao">
     <div class="container organization-grid"><div><p class="eyebrow">Organização</p><h2>Uma reunião construída pela <em>comunidade científica.</em></h2><p>A VII Reunião de Argilas Aplicadas é realizada em São Luís, Maranhão, com sede na Universidade Federal do Maranhão.</p></div>
-    <article class="organizer-card"><div class="organizer-initials">AC</div><div><span>Coordenação geral</span><h3>Profa. Dra. Ana C. Alcântara</h3><p>Universidade Federal do Maranhão (UFMA)</p></div></article>
+    <article class="organizer-card"><div class="organizer-initials"><img src="images/ac.png"> </div><div><span>Coordenação geral</span><h3>Profa. Dra. Ana C. Alcântara</h3><p>Universidade Federal do Maranhão (UFMA)</p></div></article>
     <article class="organizer-card"><div class="organizer-initials">CW</div><div><span>Coordenação</span><h3>Prof. Dr. Cicero Wellington Brito Bezerra</h3><p>Universidade Federal do Maranhão (UFMA)</p></div></article>
     <article class="organizer-card"><div class="organizer-initials">GP</div><div><span>Coordenação</span><h3>Prof. Dr. Gilvan Pereira De Figueredo</h3><p>Instituto Federal do Maranhão (IFMA)</p></div></article>
     <article class="organizer-card"><div class="organizer-initials">HA</div><div><span>Coordenação</span><h3>Prof. Dr. Harvey Alexander Villa Velez</h3><p>Universidade Federal do Maranhão (UFMA)</p></div></article>
@@ -252,9 +471,166 @@
 </main>
 <footer class="footer">
   <div class="container footer-top"><a class="brand brand-footer" href="#inicio"><img class="official-logo" src="images/logo.png" alt="VII RAA — Reunião de Argilas Aplicadas, São Luís, Maranhão, Brasil"></a>
-    <p>CONTATOS: <br>organizacao@viiraa2027.com<br>@bionanos</p>>
-  <a class="back-top" href="#inicio">Voltar ao topo ↑</a></div><div class="container footer-bottom"><span>© <span id="year">2027</span> VII RAA — Reunião de Argilas Aplicadas.</span><span>Site institucional · página única</span></div></footer>
+    <div class="footer-contacts" aria-label="Contatos oficiais"><span>CONTATOS:</span>
+      <a href="mailto:organizacao@viiraa2027.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>organizacao@viiraa2027.com</a>
+      <a href="https://www.instagram.com/viiraa.2027/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>@viiraa.2027</a>
+      <a href="https://www.instagram.com/bionanos_group/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>@bionanos_group</a>
+      </div>
+  <a class="back-top" href="#inicio">Voltar ao topo ↑</a></div><div class="container footer-bottom"><span>© <span id="year">2027</span> VII RAA — Reunião de Argilas Aplicadas.</span><span>Site institucional</span></div></footer>
 
 <dialog class="agenda-dialog" id="agenda-dialog"><div class="dialog-head"><div><p class="eyebrow">Sua seleção</p><h2>Minha agenda</h2></div><button class="close-dialog" aria-label="Fechar">×</button></div><p class="dialog-intro">As atividades selecionadas ficam salvas neste navegador.</p><div id="saved-list"></div><button class="button button-outline clear-agenda" id="clear-agenda">Limpar seleção</button></dialog>
+
+<script>
+/* Seções adicionais: datas, seleção de dia, guia de destinos e roteiro. */
+(() => {
+  // Filtragem por dia: mantém os filtros de categoria já existentes.
+  const dayButtons = [...document.querySelectorAll('[data-day-filter]')];
+  const activityCards = [...document.querySelectorAll('.activity-card')];
+  const dayNote = document.querySelector('#programme-day-note');
+
+  function selectDay(button) {
+    const date = button.dataset.dayFilter;
+    dayButtons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+
+    let visibleCount = 0;
+    activityCards.forEach(card => {
+      const matchesDate = card.dataset.date === date;
+      const categoryFilter = document.querySelector('.filter.is-active')?.dataset.filter || 'all';
+      const matchesCategory = categoryFilter === 'all' || card.dataset.category === categoryFilter;
+      card.hidden = !(matchesDate && matchesCategory);
+      if (!card.hidden) visibleCount++;
+    });
+
+    if (dayNote) {
+      const prettyDate = date.replaceAll('/', ' de ').replace('2027', ' de 2027');
+      dayNote.textContent = visibleCount
+        ? `Atividades de ${date}.`
+        : `Nenhuma atividade cadastrada para ${date}. Adicione as atividades deste dia no HTML para exibi-las aqui.`;
+    }
+  }
+
+  dayButtons.forEach(button => button.addEventListener('click', () => selectDay(button)));
+
+  // Integra o filtro de categoria com o dia selecionado.
+  document.querySelectorAll('.filter[data-filter]').forEach(filterButton => {
+    filterButton.addEventListener('click', () => {
+      const activeDay = document.querySelector('.programme-day.is-active');
+      if (activeDay) selectDay(activeDay);
+    });
+  });
+
+  // Abas de destinos: conteúdo textual e ilustração correspondentes.
+  const cityTabs = [...document.querySelectorAll('[data-city]')];
+  const cityPanels = [...document.querySelectorAll('[data-city-panel]')];
+
+  function selectCity(tab) {
+    const key = tab.dataset.city;
+    cityTabs.forEach(item => {
+      const active = item === tab;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-selected', String(active));
+      item.tabIndex = active ? 0 : -1;
+    });
+    cityPanels.forEach(panel => {
+      const active = panel.dataset.cityPanel === key;
+      panel.classList.toggle('is-active', active);
+      panel.hidden = !active;
+    });
+  }
+
+  cityTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectCity(tab));
+    tab.addEventListener('keydown', event => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      let next = index;
+      if (event.key === 'ArrowRight') next = (index + 1) % cityTabs.length;
+      if (event.key === 'ArrowLeft') next = (index - 1 + cityTabs.length) % cityTabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = cityTabs.length - 1;
+      cityTabs[next].focus();
+      selectCity(cityTabs[next]);
+    });
+  });
+
+  if (dayButtons.length) selectDay(dayButtons[0]);
+  if (cityTabs.length) selectCity(cityTabs[0]);
+})();
+</script>
+
+
+<script>
+/* Filtros da tabela de programação completa. */
+(() => {
+  const activities = [
+    ["2027-05-24","08:00","Credenciamento e entrega de material ao acolhimento","Institucional","Equipe organizadora"],
+    ["2027-05-24","09:30","Solenidade oficial de abertura","Institucional","—"],
+    ["2027-05-24","10:30","Coffee break e fotografia oficial","Intervalo","—"],
+    ["2027-05-24","10:50","Palestra 1 — Argilominerais aplicados em saúde e remediação ambiental","Palestra","Maria Gardênnia da Fonseca"],
+    ["2027-05-24","12:00","Almoço","Intervalo","—"],
+    ["2027-05-24","14:00","Oficina — Emprego de argilas em cosmética","Oficina","Cesar Viseiras Iborra"],
+    ["2027-05-24","14:00","Minicurso 1 — Argilominerais: estrutura, identificação, ocorrências e aplicações","Minicurso","Rômulo Simões Angélica"],
+    ["2027-05-24","14:00","Minicurso 2 — RMN no estado sólido para caracterização de materiais","Minicurso","Lucas Urbano José"],
+    ["2027-05-24","14:00","Minicurso 3 — Aplicação da DFT em simulações de materiais lamelares","Minicurso","Alexandre Amaral Leitão"],
+    ["2027-05-24","16:00","Coffee break","Intervalo","—"],
+    ["2027-05-24","16:20","Continuação da oficina de argilas em cosmética","Oficina","Cesar Viseiras Iborra"],
+    ["2027-05-24","16:20","Continuação do minicurso 1","Minicurso","Rômulo Simões Angélica"],
+    ["2027-05-24","16:20","Continuação do minicurso 2","Minicurso","Lucas Urbano José"],
+    ["2027-05-24","16:20","Continuação do minicurso 3","Minicurso","Alexandre Amaral Leitão"],
+    ["2027-05-24","18:20","Encerramento das atividades do primeiro dia","Institucional","—"],
+    ["2027-05-25","08:00","Credenciamento e entrega de material","Institucional","Equipe organizadora"],
+    ["2027-05-25","08:30","Palestra 2 — Da argila ao algoritmo: como a Inteligência Artificial está reinventando a ciência dos materiais","Palestra","Tiago Gomes dos Santos"],
+    ["2027-05-25","09:10","Palestra 3 — Desenvolvimento de biomateriais que integram hidróxidos lamelares híbridos e polímeros orgânicos","Palestra","Vera Regina Leopoldo Constantino"],
+    ["2027-05-25","09:50","Coffee break","Intervalo","—"],
+    ["2027-05-25","10:10","Palestra 4 — Hidróxidos duplos lamelares do tipo hidrotalcita: dos monometálicos aos de alta entropia","Palestra","Fernando Wypych"],
+    ["2027-05-25","10:50","Palestra 5 — O mineral clinocloro como uma nanocavidade natural para confinamento de água: uma abordagem multitécnica","Palestra","Raphaela de Oliveira"],
+    ["2027-05-25","10:30","Palestra 6 — Geologia das argilas e dos minerais industriais no Brasil","Palestra","Luís Carlos Bertolino"],
+
+    ["2027-05-25","12:00","Almoço","Intervalo","—"],
+
+    ["2027-05-25","14:00","Sessão de apresentações orais I","Sessão científica","Comissão científica a definir"],
+    ["2027-05-25","15:20","Coffee break","Intervalo","—"],
+    ["2027-05-25","15:40","Sessão de apresentações orais II","Sessão científica","Comissão científica a definir"],
+    ["2027-05-25","17:00","Sessão de pôsteres I","Sessão científica","Comissão científica a definir"],
+    ["2027-05-25","18:20","Encerramento das atividades do segundo dia","Institucional","—"],
+
+
+    ["2027-05-26","08:00","Credenciamento e entrega de material","Institucional","Equipe organizadora"],
+    ["2027-05-26","08:30","Palestra 7 — Materiais derivados de argilominerais aplicados a processos de adsorção e catálise","Palestra","Sibele Berenice Castella Pergher"],
+    ["2027-05-26","09:10","Palestra 8 — Aplicação de hidróxidos duplos lamelares em processos de remediação ambiental e purificação de águas limpas","Palestra","Maria de los Ángeles Mantilla Ramírez"],
+    ["2027-05-26","09:50","Coffee break","Intervalo","—"],
+
+    ["2027-05-26","10:10","Palestra 9 — Aplicação de filtros a base de argilas naturais com blends de fibras naturais em sistema de potabilização de água","Palestra","Harvey Alexander Villa Velez"],
+    ["2027-05-26","10:50","Palestra 10 — Desafios na gestão de grupos de pesquisa no século XXI: uma abordagem prática","Palestra","Hernane da Silva Júnior"],
+    ["2027-05-26","12:00","Almoço","Intervalo","—"],
+    
+    ["2027-05-26","14:00","Sessão de apresentações orais III","Sessão científica","Comissão científica a definir"],
+    ["2027-05-26","15:30","Coffee break","Intervalo","—"],
+
+    ["2027-05-26","15:50","Mesa-redonda — Argilas brasileiras na transição energética e na economia circular: oportunidades para ciência, indústria e meio ambiente","Sessão científica","André Sampaio Mexias e representantes convidados"],
+    ["2027-05-26","16:50","Sessão de pôsteres II","Sessão científica","Comissão científica a definir"],
+    ["2027-05-26","18:20","Premiação, agradecimentos, encerramento e encaminhamentos para a próxima edição","Institucional","Ana Clécia Santos de Alcântara"]
+  ];
+  const body = document.getElementById('raa-corpo');
+  const day = document.getElementById('raa-dia');
+  const type = document.getElementById('raa-tipo');
+  const search = document.getElementById('raa-busca');
+  const count = document.getElementById('raa-contagem');
+  const dates = {"2027-05-24":"24/05/2027","2027-05-25":"25/05/2027","2027-05-26":"26/05/2027"};
+  const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;", "'":"&#39;"}[char]));
+  function render() {
+    const selectedDay = day.value, selectedType = type.value, term = search.value.trim().toLocaleLowerCase('pt-BR');
+    const list = activities.filter(item => (!selectedDay || item[0] === selectedDay) && (!selectedType || item[3] === selectedType) && (!term || (item[2] + ' ' + item[4]).toLocaleLowerCase('pt-BR').includes(term)));
+    body.innerHTML = list.map(item => `<tr><td>${escapeHTML(dates[item[0]])}</td><td>${escapeHTML(item[1])}</td><td>${escapeHTML(item[2])}</td><td><span class="raa-categoria">${escapeHTML(item[3])}</span></td><td>${escapeHTML(item[4])}</td></tr>`).join('');
+    count.textContent = `${list.length} atividade(s) encontrada(s) de ${activities.length} cadastradas.`;
+  }
+  day.addEventListener('change', render); type.addEventListener('change', render); search.addEventListener('input', render); render();
+})();
+</script>
+
 </body>
 </html>

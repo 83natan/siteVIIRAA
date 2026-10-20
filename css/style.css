@@ -4,12 +4,14 @@
     --navy-deep:#081d33;
     --blue:#1464d2;
     --cyan:#54d4e8;
-    --mint:#c2f3e0;
+    --mint:#dff4ec;
     --green:#168b72;
     --orange:#ed9c58;
-    --paper:#fae0e0;
-    --soft:#dcdfe2;
-    --ink:#482618;
+    --paper:#fff;
+    --soft:#e7e1d2;
+    --ink:#183148;
+    --muted:#65788a;
+    --line:#dce5ec;
     --radius:22px;
     --shadow:0 18px 50px rgba(16,43,70,.09);
 }
@@ -96,7 +98,7 @@ button{
 }
 .brand small{
     font-size:.64rem;
-    font-weight:700;
+    font-weight:800;
     letter-spacing:.15em;
     color:var(--muted);
     margin-top:5px;
@@ -108,7 +110,7 @@ button{
 }
 .nav>a:not(.button){
     font-size:.87rem;
-    font-weight:700;
+    font-weight:200;
     color:#4a6074;
     transition:color .2s;
 }
@@ -140,9 +142,7 @@ button{
     font-size:.9rem;
     font-weight:800;
     line-height:1.2;
-    transition:transform .2s,
-    background .2s,
-    border-color .2s;
+    transition:transform .2s,background .2s,border-color .2s;
 }
 .button:hover{
     transform:translateY(-2px);
@@ -481,13 +481,13 @@ button{
 }
 .activity-card{
     display:grid;
-    grid-template-columns:220px minmax(0,1fr);
+    grid-template-columns:150px minmax(0,1fr);
     align-items:stretch;
 }
 .activity-card>img{
     width:100%;
     height:100%;
-    min-height:220px;
+    min-height:150px;
     object-fit:cover;
     background:#dceaf2;
 }
@@ -502,7 +502,7 @@ button{
     margin-top:auto;
 }
 .activity-body{
-    padding:20px;
+    padding:2px;
 }
 .activity-meta{
     display:flex;
@@ -515,7 +515,7 @@ button{
 .pill{
     border-radius:999px;
     padding:5px 9px;
-    font-size:.7rem;
+    font-size:.72rem;
     font-weight:800;
 }
 .pill-blue{
@@ -536,12 +536,12 @@ button{
     font-size:1.2rem;
     line-height:1.25;
     letter-spacing:-.025em;
-    margin:17px 0 8px;
+    margin:10px 0 8px;
 }
 .activity-card p{
     font-size:.87rem;
     color:var(--muted);
-    min-height:68px;
+    min-height:50px;
     margin:0;
 }
 .activity-footer{
@@ -550,8 +550,8 @@ button{
     justify-content:space-between;
     gap:8px;
     border-top:1px solid #edf1f4;
-    margin-top:18px;
-    padding-top:15px;
+    margin-top:8px;
+    padding-top:5px;
     font-size:.72rem;
     color:var(--muted);
 }
@@ -559,7 +559,7 @@ button{
     background:#fff;
     border:1px solid var(--line);
     border-radius:999px;
-    padding:7px 10px;
+    padding:5px 10px;
     color:var(--navy);
     font-size:.72rem;
     font-weight:800;
@@ -575,7 +575,7 @@ button{
     align-items:center;
     justify-content:space-between;
     gap:18px;
-    padding:20px 22px;
+    padding:2px 20px;
     margin-top:25px;
     background:#fff;
     border:1px solid var(--line);
@@ -630,7 +630,7 @@ button{
     display:flex;
     align-items:center;
     gap:10px;
-    background:#f5eaea;
+    background:#fff;
     border:1px solid var(--line);
     box-shadow:var(--shadow);
     padding:12px 16px;
@@ -790,7 +790,7 @@ button{
 }
 .registration h2{
     font-size:clamp(2.2rem,4vw,3.4rem);
-    color:#fdf9f9;
+    color:#fff;
 }
 .registration h2 em{
     color:var(--cyan);
@@ -1611,5 +1611,616 @@ button{
     }
     .city-slide {
         transition: none;
+    }
+}
+
+
+/* =========================================================
+   20. DATAS IMPORTANTES
+   ========================================================= */
+.important-dates {
+    background: #f7f1e5;
+}
+.important-dates .section-heading {
+    max-width: 760px;
+    margin-bottom: 34px;
+}
+.dates-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    position: relative;
+}
+.dates-timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 11px;
+    height: 2px;
+    background: #e5d9c4;
+}
+.date-milestone {
+    position: relative;
+    padding-top: 34px;
+}
+.date-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f7f1e5;
+    border-radius: 50%;
+    background: #e5a83b;
+    box-shadow: 0 0 0 1px #d99a24;
+}
+.date-label {
+    margin: 0 0 7px;
+    color: #a96b00;
+    font-size: .78rem;
+    font-weight: 800;
+}
+.date-milestone h3 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.date-value {
+    margin: 0;
+    color: var(--muted);
+    font-size: .84rem;
+}
+.date-milestone-featured h3 {
+    color: #0d6f7d;
+}
+
+/* =========================================================
+   21. ABAS DE DIA DA PROGRAMAÇÃO
+   ========================================================= */
+.programme-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 28px 0 18px;
+}
+.programme-day {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 108px;
+    padding: 12px 15px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    color: var(--navy);
+    text-align: left;
+    transition: color .2s, background .2s, border-color .2s, transform .2s;
+}
+.programme-day:hover {
+    transform: translateY(-2px);
+    border-color: var(--orange);
+}
+.programme-day strong {
+    font-size: .88rem;
+}
+.programme-day span {
+    color: var(--muted);
+    font-size: .75rem;
+}
+.programme-day.is-active {
+    border-color: var(--navy);
+    background: var(--navy);
+    color: #fff;
+}
+.programme-day.is-active span {
+    color: #d9e6ef;
+}
+.programme-day-note {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: .86rem;
+}
+
+/* =========================================================
+   22. GUIA DE CARACTERÍSTICAS DA CIDADE
+   ========================================================= */
+.city-guide {
+    margin-top: 64px;
+    padding: 32px;
+    border-radius: 24px;
+    background: var(--navy-deep);
+    color: #fff;
+    background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+.city-guide-heading {
+    max-width: 740px;
+    margin-bottom: 24px;
+}
+.city-guide-heading h3 {
+    margin: 0 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.12;
+    letter-spacing: -.04em;
+}
+.city-guide-heading > p:last-child {
+    margin: 0;
+    color: #d0dce8;
+}
+.city-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 22px;
+}
+.city-tab {
+    min-height: 72px;
+    padding: 13px 15px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 13px;
+    background: rgba(255,255,255,.06);
+    color: #fff;
+    text-align: left;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.city-tab strong,
+.city-tab span {
+    display: block;
+}
+.city-tab strong {
+    margin-bottom: 4px;
+    font-size: .9rem;
+}
+.city-tab span {
+    color: #c7d7e5;
+    font-size: .76rem;
+}
+.city-tab.is-active {
+    border-color: #e4a93e;
+    background: #e4a93e;
+    color: #142f49;
+}
+.city-tab.is-active span {
+    color: #453719;
+}
+.city-panel {
+    display: grid;
+    grid-template-columns: minmax(220px, .78fr) minmax(0, 1.22fr);
+    align-items: stretch;
+    gap: 28px;
+}
+.city-panel[hidden] {
+    display: none !important;
+}
+.city-art {
+    position: relative;
+    min-height: 310px;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,.18);
+    border-radius: 16px;
+    background: linear-gradient(#d9eef0, #f0ead8);
+}
+.city-sun {
+    position: absolute;
+    top: 18%;
+    right: -24px;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #ffe6a6;
+}
+.city-art-slz::before,
+.city-art-slz::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 38%;
+    height: 70%;
+    background: #e4a46f;
+}
+.city-art-slz::before {
+    left: 0;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+.city-art-slz::after {
+    right: 0;
+    height: 56%;
+    background: #3a9b9b;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+.city-house {
+    position: absolute;
+    bottom: 14%;
+    z-index: 1;
+    width: 28%;
+    height: 50%;
+    border: 5px solid #fff0d3;
+    background: #f1d2a1;
+}
+.house-one {
+    left: 19%;
+}
+.house-two {
+    left: 42%;
+    height: 58%;
+    background: #c76f55;
+}
+.house-three {
+    right: 8%;
+    height: 42%;
+    background: #4ca7a0;
+}
+.city-art-raposa {
+    background: linear-gradient(#f8d2a2 0 48%, #e9b86e 48% 72%, #168b9a 72%);
+}
+.city-art-barreirinhas {
+    background: linear-gradient(#cfe8ed 0 44%, #efcf8f 44% 100%);
+}
+.city-art-lencois {
+    background: linear-gradient(#b5dce3 0 48%, #f5dfa9 48% 100%);
+}
+.city-dune {
+    position: absolute;
+    left: -10%;
+    width: 125%;
+    height: 35%;
+    border-radius: 50% 55% 0 0;
+}
+.dune-one {
+    bottom: 17%;
+    background: #e8bf7c;
+    transform: rotate(-5deg);
+}
+.dune-two {
+    bottom: -2%;
+    background: #d6a054;
+    transform: rotate(7deg);
+}
+.city-sea {
+    position: absolute;
+    bottom: 8%;
+    left: -4%;
+    width: 45%;
+    height: 9%;
+    border-radius: 50%;
+    background: #168b9a;
+}
+.city-panel-copy h4 {
+    margin: 0 0 12px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1.15;
+}
+.city-panel-copy > p:not(.eyebrow) {
+    color: #d2dfeb;
+}
+.city-panel-copy ul {
+    display: grid;
+    gap: 9px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.city-panel-copy li {
+    padding: 11px 13px;
+    border-left: 2px solid #e4a93e;
+    border-radius: 0 9px 9px 0;
+    background: rgba(255,255,255,.06);
+    color: #d5e1eb;
+    font-size: .88rem;
+}
+.city-panel-copy li strong {
+    color: #fff;
+}
+.city-guide-note {
+    margin-top: 22px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.08);
+    color: #d0dce8;
+    font-size: .8rem;
+}
+
+/* =========================================================
+   23. ROTEIRO TURÍSTICO DE QUATRO DIAS
+   ========================================================= */
+.four-day-route {
+    margin-top: 26px;
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+.route-heading {
+    margin-bottom: 24px;
+}
+.route-heading h3 {
+    margin: 0 0 8px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(1.45rem, 2.6vw, 2rem);
+    letter-spacing: -.035em;
+    color: var(--navy);
+}
+.route-heading > p:last-child {
+    margin: 0;
+    color: var(--muted);
+}
+.route-days {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+.route-day {
+    position: relative;
+    padding-top: 17px;
+    border-top: 2px solid #168b9a;
+}
+.route-day-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background: #f7e7c4;
+    color: #8a5b00;
+    font-size: .8rem;
+    font-weight: 800;
+}
+.route-day h4 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: .98rem;
+}
+.route-day p {
+    margin: 0;
+    color: var(--muted);
+    font-size: .85rem;
+}
+.route-footnote {
+    margin: 22px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+/* =========================================================
+   24. RESPONSIVIDADE DAS SEÇÕES ADICIONADAS
+   ========================================================= */
+@media (max-width: 850px) {
+    .dates-timeline,
+    .route-days {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .dates-timeline::before {
+        display: none;
+    }
+    .date-milestone {
+        padding: 0 0 0 30px;
+    }
+    .date-point {
+        top: 2px;
+    }
+    .city-tabs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .city-panel {
+        grid-template-columns: 1fr;
+    }
+    .city-art {
+        min-height: 260px;
+    }
+}
+@media (max-width: 560px) {
+    .dates-timeline,
+    .route-days,
+    .city-tabs {
+        grid-template-columns: 1fr;
+    }
+    .city-guide,
+    .four-day-route {
+        padding: 20px;
+    }
+    .city-tab {
+        min-height: 62px;
+    }
+    .city-art {
+        min-height: 220px;
+    }
+}
+
+
+
+/* 30. PROGRAMAÇÃO COMPLETA DO EVENTO */
+.event-schedule { background: #fff; }
+.event-schedule .section-heading { margin-bottom: 22px; }
+.raa-filtros { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 12px; }
+.raa-filtros select, .raa-filtros input { flex:1 1 210px; min-width:0; padding:12px; border:1px solid #cbd5d1; border-radius:8px; background:#fff; color:var(--ink); font:inherit; font-size:14px; }
+#raa-contagem { margin:10px 0; color:var(--muted); font-size:13px; }
+.raa-tabela-container { width:100%; overflow-x:auto; border:1px solid var(--line); border-radius:12px; }
+.raa-tabela { width:100%; border-collapse:collapse; font-size:13px; line-height:1.5; }
+.raa-tabela th { padding:13px 12px; text-align:left; white-space:nowrap; color:#fff; background:var(--navy); }
+.raa-tabela td { padding:11px 12px; border-bottom:1px solid #e4eae6; vertical-align:top; }
+.raa-tabela tbody tr:nth-child(even) { background:#f5f8f6; }
+.raa-tabela tbody tr:hover { background:#e9f2ed; }
+.raa-categoria { display:inline-block; padding:4px 8px; border-radius:999px; background:var(--mint); color:#174c3c; font-size:11px; font-weight:700; white-space:nowrap; }
+.raa-nota { margin-top:12px; color:var(--muted); font-size:12px; line-height:1.6; }
+
+/* Cards científicos mais compactos, sem alterar a identidade visual. */
+.activity-card { grid-template-columns:112px minmax(0,1fr); }
+.activity-card > img { min-height:0; height:100%; }
+.activity-body { padding:12px 14px; }
+.activity-card h3 { font-size:1.02rem; line-height:1.28; margin:7px 0 5px; }
+.activity-card p { min-height:0; font-size:.8rem; line-height:1.45; }
+.activity-footer { margin-top:7px; padding-top:7px; }
+.activity-meta { justify-content:flex-start; flex-wrap:wrap; }
+
+/* Categorias de inscrição em uma única linha em telas largas. */
+.price-grid { grid-template-columns:repeat(5, minmax(0,1fr)); gap:10px; }
+.price-card { min-width:0; min-height:145px; gap:7px; padding:15px 12px; border-radius:14px; }
+.price-category { font-size:.68rem; letter-spacing:.035em; line-height:1.3; }
+.price-value { font-size:clamp(1.25rem,1.7vw,1.75rem); white-space:nowrap; }
+.price-note { font-size:.72rem; line-height:1.35; }
+
+/* Contatos clicáveis com ícones vetoriais no rodapé. */
+.footer-contacts { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px 18px; color:#c3d1de; font-size:.82rem; }
+.footer-contacts > span { font-weight:800; letter-spacing:.05em; }
+.footer-contacts a { display:inline-flex; align-items:center; gap:7px; color:#e6f1f7; transition:color .2s; }
+.footer-contacts a:hover { color:var(--cyan); }
+.footer-contacts svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+@media (max-width:950px) {
+  .price-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .activity-card { grid-template-columns:100px minmax(0,1fr); }
+}
+@media (max-width:740px) {
+  .raa-filtros select, .raa-filtros input { flex-basis:100%; }
+  .raa-tabela { min-width:760px; }
+  .activity-card { grid-template-columns:1fr; }
+  .activity-card > img { height:115px; min-height:115px; }
+  .activity-body { padding:12px; }
+  .price-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .footer-top { align-items:flex-start; flex-wrap:wrap; }
+  .footer-contacts { justify-content:flex-start; width:100%; }
+}
+@media (max-width:400px) {
+  .price-grid { grid-template-columns:1fr; }
+}
+
+
+/* 31. AJUSTES SOLICITADOS — BANNER OFICIAL E CARDS CIENTÍFICOS COMPACTOS */
+.about-logo-banner {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 24px 0 10px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.activity-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+    min-height: 0;
+    border-radius: 13px;
+}
+
+.activity-card > img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    max-height: 132px;
+    object-fit: cover;
+}
+
+.activity-body {
+    min-width: 0;
+    padding: 10px 14px;
+}
+
+.activity-meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    font-size: .7rem;
+    line-height: 1.35;
+}
+
+.activity-card .pill {
+    padding: 3px 8px;
+    font-size: .66rem;
+}
+
+.activity-card h3 {
+    margin: 5px 0 3px;
+    font-size: .96rem;
+    line-height: 1.28;
+    letter-spacing: -.015em;
+}
+
+.activity-card p {
+    min-height: 0;
+    margin: 0;
+    font-size: .76rem;
+    line-height: 1.35;
+}
+
+.activity-card .activity-description-empty {
+    display: none;
+}
+
+.activity-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7px 12px;
+    margin-top: 6px;
+    padding-top: 6px;
+    font-size: .7rem;
+    line-height: 1.35;
+}
+
+.save-activity {
+    padding: 5px 9px;
+    font-size: .68rem;
+}
+
+/* 32. BOTÃO DE INSCRIÇÃO EM DESTAQUE */
+.registration-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.registration-button {
+    min-width: 210px;
+    padding: 16px 30px;
+    border: 2px solid var(--orange);
+    background: var(--orange);
+    color: var(--navy-deep);
+    font-size: 1rem;
+    box-shadow: 0 12px 26px rgba(237, 156, 88, .24);
+}
+
+.registration-button:hover {
+    border-color: #f4b777;
+    background: #f4b777;
+}
+
+@media (max-width: 740px) {
+    .activity-card {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card > img {
+        height: 72px;
+        max-height: 72px;
+        min-height: 72px;
+    }
+
+    .activity-body {
+        padding: 10px 12px;
+    }
+
+    .about-logo-banner {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .activity-footer {
+        align-items: flex-start;
     }
 }
